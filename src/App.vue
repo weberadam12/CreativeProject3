@@ -1,32 +1,116 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="menu">
+      <div id="side1">
+        <router-link to="/store" class="menu-spacing">
+          <div class="menu-item">
+            <h2>Store</h2>
+          </div>
+        </router-link>
+        <router-link to="/gallery" class="menu-spacing">
+          <div class="menu-item">
+            <h2>Gallery</h2>
+          </div>
+        </router-link>
+        <router-link to="/about" class="menu-spacing">
+          <div class="menu-item">
+            <h2>About</h2>
+          </div>
+        </router-link>
+      </div>
+      <div id="brand">
+        <router-link to="/">
+          <h1 class="brand-name">Puppers</h1>
+        </router-link>
+      </div>
+      <div id="side">
+        <router-link to="/cart">
+          <div class="menu-item">
+            <img src="./assets/cart.png">
+            <p>{{cartTotal}} items</p>
+          </div>
+        </router-link>
+      </div>
     </div>
     <router-view />
   </div>
 </template>
 
+<script>
+  export default {
+    computed:{
+      cartTotal(){
+        return 0 || this.$root.$data.cart.length
+      }
+    }
+  }
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  .brand-name {
+    font-weight: bold;
+    font-family: "Brush Script MT";
+  }
 
-#nav {
-  padding: 30px;
-}
+  /** {*/
+  /*  box-sizing: border-box;*/
+  /*}*/
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  #menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    grid-template-areas: "none brand side";
+    margin-bottom: 5px;
+  }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  #menu a {
+    /*color: #B84901;*/
+  }
+
+  #brand {
+    grid-area: brand;
+    display: flex;
+    justify-content: center;
+    font-size: 12pt;
+  }
+
+  #side {
+    grid-area: side;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #side img {
+    width: 50px;
+  }
+
+  #side1 {
+    grid-area: none;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .menu-item {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2%;
+  }
+
+  .menu-item p {
+    margin: auto;
+  }
+
+  .menu-item h2 {
+    margin: 10%;
+    font-size: 15pt;
+  }
+
+  .menu-spacing {
+    margin: 2%;
+  }
+
+  .browse {
+    margin-right: 50px;
+  }
 </style>
