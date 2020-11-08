@@ -40,7 +40,10 @@
   export default {
     computed:{
       cartTotal(){
-        return 0 || this.$root.$data.cart.length
+        if(this.$root.$data.cart.length === 0) {
+          return 0
+        }
+        return this.$root.$data.cart.reduce((a, b) => ({quantity: a.quantity + b.quantity})).quantity;
       }
     }
   }

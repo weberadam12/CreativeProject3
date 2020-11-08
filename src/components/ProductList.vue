@@ -26,7 +26,14 @@
         },
         methods: {
             addToCart(product) {
-                this.$root.$data.cart.push(product)
+                let cart = this.$root.$data.cart
+
+                if(cart.some(itm => itm.id === product.id)){
+                    product.quantity += 1
+                } else {
+                    product.quantity += 1
+                    cart.push(product)
+                }
             }
         }
     }

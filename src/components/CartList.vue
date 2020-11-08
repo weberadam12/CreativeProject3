@@ -3,15 +3,19 @@
         <div class="products">
             <div class="product" v-for="product in products" :key="product.id">
                 <div class="image">
-                    <img :src="'/images/products/'+product.image">
+                    <img :src="product.img">
                 </div>
                 <div class="info-stuff">
                     <div class="info">
-                        <h1>{{product.name}}</h1>
-                        <p>{{product.country}}</p>
+                        <h1>{{product.item}}</h1>
+                        <p>{{product.description}}</p>
                     </div>
                     <div class="price">
-                        <h2>{{product.price}}</h2>
+                        <h2>${{product.price}}</h2>
+                        <div id="quantity">
+                            <h2>QTY: </h2>
+                            <input type="number" v-model="product.quantity"/>
+                        </div>
                         <button @click="removeFromCart(product)" class="auto">Remove Item</button>
                     </div>
                 </div>
@@ -33,12 +37,28 @@
                         this.$root.$data.cart.splice(i, 1)
                     }
                 }
+                product.quantity = 0
             }
         }
     }
 </script>
 
 <style scoped>
+    #quantity {
+        display: inline-flex;
+        padding-left: 55%;
+    }
+
+    #quantity h2 {
+        padding-right: 5%;
+    }
+
+    #quantity input {
+        width: 75px;
+        display: inline-flex;
+        padding-left: 5%;
+    }
+
     .wrapper {
         display: inline-flex;
         align-items: center;
