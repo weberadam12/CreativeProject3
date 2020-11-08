@@ -43,7 +43,12 @@
         if(this.$root.$data.cart.length === 0) {
           return 0
         }
-        return this.$root.$data.cart.reduce((a, b) => ({quantity: a.quantity + b.quantity})).quantity;
+        let cart_total = 0
+        for (let i = 0; i < this.$root.$data.cart.length; i++){
+          cart_total += parseInt(this.$root.$data.cart[i].quantity)
+        }
+        console.log('total', cart_total)
+        return cart_total
       }
     }
   }
