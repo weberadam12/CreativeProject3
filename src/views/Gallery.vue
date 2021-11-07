@@ -2,50 +2,40 @@
     <div class="page-container">
         <div class="content-wrap">
             <div>
+            <h1>Out of Stock until March 2058</h1>
                 <div class="row padded-row">
                     <div class="col">
-                        <img src="https://live.staticflickr.com/4174/33634058024_74d000546d_b.jpg" alt="doggo" class="img-fluid">
+                        <img src="../assets/products/Animal_Translator.png" alt="Animal Translator" class="img-fluid">
                     </div>
                     <div class="col">
-                        <img src="https://live.staticflickr.com/8519/8645723913_8ba2a85f6f_b.jpg" class="img-fluid" alt="Allic's 1st birthday party">
+                        <img src="../assets/products/Car-Wash.png" class="img-fluid" alt="Car Wash">
                     </div>
                 </div>
                 <div class="row padded-row">
                     <div class="col">
-                        <img src="https://live.staticflickr.com/6198/6114260088_20a2cc5ae5_b.jpg" alt="Dog" class="img-fluid">
+                        <img src="../assets/products/Rainbowinator.jpg" alt="Rainbow Maker" class="img-fluid">
                     </div>
                     <div class="col">
-                        <img src="https://live.staticflickr.com/5204/5302995657_f083b1558d_b.jpg" alt="the doggos" class="img-fluid">
+                        <img src="../assets/products/Robot-Dog.jpg" alt="Robot Dog" class="img-fluid">
                     </div>
                     <div class="col">
-                        <img src="https://live.staticflickr.com/5088/5323961120_0172112bcb_b.jpg" alt="Dogs 013" class="img-fluid">
+                        <img src="../assets/products/Robot-Rodeo.jpg" alt="Robot Rodeo" class="img-fluid">
                     </div>
                 </div>
                 <div class="row padded-row">
                     <div class="col">
-                        <img src="https://live.staticflickr.com/604/32255598460_274caa2db0_b.jpg" alt="dog" class="img-fluid">
+                        <img src="../assets/products/RollerCoaster.jpg" alt="Coolest Coaster EVER" class="img-fluid">
                     </div>
                     <div class="col">
-                        <img src="https://live.staticflickr.com/7396/8728178651_912c2fa554_b.jpg" alt="A cute Dog 4" class="img-fluid">
+                        <img src="../assets/products/Super-Maze.jpg" alt="Shrinking Submarine" class="img-fluid">
                     </div>
                 </div>
-                <div class="row padded-row">
-                    <div class="col">
-                        <img src="../assets/dog1.jpg" class="img-fluid" alt="dog1">
-                    </div>
-                    <div class="col">
-                        <img src="../assets/dog2.jpg" class="img-fluid" alt="dog2">
-                    </div>
-                    <div class="col">
-                        <img src="../assets/dog3.jpg" class="img-fluid" alt="dog3">
-                    </div>
-                </div>
+
             </div>
         </div>
 
         <div class="footer">
-            <hr>
-            <a href="https://github.com/bswheel/cp3.git">GitHub</a>
+            <a href="https://github.com/weberadam12/CreativeProject3.git">GitHub</a>
         </div>
     </div>
 
@@ -53,7 +43,7 @@
 
 <script>
     export default {
-        name: "Gallery"
+        name: "Pre-Order"
     }
 </script>
 
@@ -70,20 +60,24 @@
     }
 
     .footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
-        height: 100px;
-        padding-bottom: 50px;
-        background-color: #f8f9fa;
+      text-align: center;
+      background-color: #173985;
+      color: #fff;
+      padding: 20px;
+      min-height: 50px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 2.5rem;
     }
 
-    .page-container {
-        position: relative;
-        min-height: 100vh;
-        width: 100%;
-    }
+
+      .page-container {
+      padding-top: 25px;
+      padding-bottom: 0px;
+      text-align: center;
+      background-color: #7194E3
+      }
 
     .content-wrap {
         padding-bottom: 100px;
