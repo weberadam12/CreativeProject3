@@ -101,7 +101,7 @@
     }
 
     .info h1 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .info h2 {
@@ -110,7 +110,7 @@
 
     .info p {
         /*margin: 0px;*/
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .info-stuff {
