@@ -2,14 +2,14 @@
   <div id="app">
     <div id="menu">
       <div id="side1">
-        <router-link to="/store" class="menu-spacing">
+        <router-link to="/Browse" class="menu-spacing">
           <div class="menu-item">
             <h2>Store</h2>
           </div>
         </router-link>
-        <router-link to="/gallery" class="menu-spacing">
+        <router-link to="/gallery" class="menu-spacing1">
           <div class="menu-item">
-            <h2>Gallery</h2>
+            <h2>Pre-Order</h2>
           </div>
         </router-link>
         <router-link to="/about" class="menu-spacing">
@@ -20,7 +20,7 @@
       </div>
       <div id="brand">
         <router-link to="/">
-          <h1 class="brand-name">Puppers</h1>
+          <h1 class="brand-name">Phineas and Ferb</h1>
         </router-link>
       </div>
       <div id="side">
@@ -115,8 +115,8 @@
   }
 
   .menu-spacing {
-    margin: 2%;
-  }
+  margin: 2%;
+}
 
   .browse {
     margin-right: 50px;
