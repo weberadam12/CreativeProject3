@@ -4,7 +4,7 @@ import Home from "../views/Home.vue";
 import About from "../views/About.vue"
 import Cart from "../views/Cart.vue"
 import Gallery from "../views/Gallery.vue"
-import Store from "../views/Store.vue"
+import Store from "../views/Browse.vue"
 
 Vue.use(VueRouter);
 
@@ -21,7 +21,7 @@ const routes = [
   },
   {
     path:"/gallery",
-    name:"Gallery",
+    name:"Pre-Order",
     component: Gallery
   },
   {
@@ -30,7 +30,7 @@ const routes = [
     component: Cart
   },
   {
-    path:"/store",
+    path:"/browse",
     name:"Store",
     component: Store
   }
