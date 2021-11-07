@@ -12,8 +12,8 @@
         </div>
 
         <div class="footer">
-            <hr>
-            <a href="https://github.com/bswheel/cp3.git">GitHub</a>
+
+            <a href="https://github.com/weberadam12/CreativeProject3.git">GitHub</a>
         </div>
     </div>
 </template>
@@ -55,7 +55,24 @@
         display: table;
         width: 100%;
     }
-
+    .page-container {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    text-align: center;
+    min-height: 100vh;
+    background-color: #7194E3
+    }
+    .footer {
+      text-align: center;
+      background-color: #173985;
+      color: #fff;
+      padding: 20px;
+      min-height: 50px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 2.5rem;
+    }
     i {
         display: table-cell;
         padding-left: 10px;
