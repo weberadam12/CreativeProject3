@@ -2,29 +2,23 @@
   <div class="page-container">
     <div class="content-wrap">
 
-      <img src="../assets/dog-pano.jpg" class="img-fluid" alt="Responsive image">
+      <img src="../assets/Afternoon-With-Phineas-And-Ferb.jpg" class="img-fluid" alt="Responsive image">
 
       <div class="text-center">
         <div class="card-body">
-          <h5 class="quote">Our Mission</h5>
+          <h5 class="quote">Our Purpose</h5>
           <p class="info-text">
-            Our mission is to help dog owners to love their dogs even more by providing awesome swag, toys and training at
-            a reasonable price. To help support local shelters and help dogs get adopted in your area please donate to
-            our cause.
+            Every child grows up wanting and wishing that they could spend an afternoon with the legendary Phineas and Ferb. Well now you can!!
+            Or if that is no longer for you or you're behind on Christmas shopping, you can simply purchase one of their many inventions for a HUGE discount!
           </p>
-          <a href="https://www.google.com/search?safe=active&rlz=1C1CHBF_enUS850US850&sxsrf=ALeKk03JQjocZ6uaKglMar
-                LEIRQd70vjdA%3A1601043470004&ei=DfxtX_viPP2O9PwPwsOT6AE&q=donate+here+button&oq=donate+here+button&
-                =CgZwc3ktYWIQAzICCAA6BAgjECc6BQgAEJECOgQIABBDOgsILhCxAxDHARCjAjoFCAAQsQM6CAgAELEDEIMBOgYIABAKEEM6CAguEL
-                EDEIMBOgcIABCxAxBDOggIABCxAxCRAjoFCAAQkgM6BwgAEBQQhwI6BggAEBYQHlCaJliJPWCSPmgAcAB4AIABa4gBmg2SAQQxNS40
-                mAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab&ved=0ahUKEwi7nbLav4TsAhV9B50JHcLhBB0Q4dUDCA0&uact=5" class="btn btn-primary" target="_blank">
-            Donate Here!
+          <a href="https://www.youtube.com/watch?v=_qZYWo3txPk" class="btn btn-primary" target="_blank">
+            Spend a day with Phineas and Ferb!
           </a>
         </div>
       </div>
 
       <div class="footer">
-        <hr>
-        <a href="https://github.com/bswheel/cp3.git">GitHub</a>
+        <a href="https://github.com/weberadam12/CreativeProject3.git">GitHub</a>
       </div>
     </div>
   </div>
@@ -51,19 +45,24 @@
   }
 
   .footer {
-    position: absolute;
+    text-align: center;
+    background-color: #173985;
+    color: #fff;
+    padding: 20px;
+    min-height: 50px;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    text-align: center;
-    height: 100px;
-    padding-bottom: 50px;
-    background-color: #f8f9fa;
+    height: 2.5rem;
   }
 
   .page-container {
+  padding-top: 50px;
     position: relative;
     min-height: 100vh;
+      text-align: center;
     width: 100%;
+      background-color: #7194E3
   }
 
   .content-wrap {
