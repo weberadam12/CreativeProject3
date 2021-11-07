@@ -1,12 +1,12 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-import merch from "./items"
+import items from "./items"
 
 Vue.config.productionTip = false;
 
 let data = {
-  products: merch,
+  products: items,
   cart: []
 }
 
