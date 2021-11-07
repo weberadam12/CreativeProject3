@@ -13,9 +13,10 @@
             </div>
         </div>
 
+
         <div class="footer">
             <hr>
-            <a href="https://github.com/bswheel/cp3.git">GitHub</a>
+            <a href="https://github.com/weberadam12/CreativeProject3.git">GitHub</a>
         </div>
     </div>
 </template>
@@ -23,7 +24,7 @@
 <script>
     import CartList from "../components/CartList.vue"
     export default {
-        name: 'Browse',
+        name: 'Store',
         components: {
             CartList
         },
@@ -54,7 +55,17 @@
         padding: 10px;
         text-align: center;
     }
-
+    .footer {
+      text-align: center;
+      background-color: #173985;
+      color: #fff;
+      padding: 20px;
+      min-height: 50px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 2.5rem;
+    }
     #total-line {
         text-align: left;
         font-weight: bolder;
